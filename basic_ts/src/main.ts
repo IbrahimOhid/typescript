@@ -47,13 +47,38 @@
 // }
 
 
-type user = {
-    name: string,
-    age: number,
-    skills?: boolean
+// type user = {
+//     name: string,
+//     age: number,
+//     skills?: boolean
+// }
+
+// const devs:user ={
+//     name: 'ohid',
+//     age: 33,
+// }
+
+//enum💚💚💚
+// enum skills {
+//     mern = 'mern stack',
+//     laravel = 'php with laravel',
+//     ios = 'flutter / native'
+// }
+// const skill = skills.laravel;
+// console.log(skill);
+
+//class 💚💚💚
+
+class Student {
+    name: string;
+    age: number;
+    skills: boolean;
+    constructor(name: string, age: number, skills: boolean){
+        this.name = name,
+        this.age = age,
+        this.skills = skills
+    }
 }
 
-const devs:user ={
-    name: 'ohid',
-    age: 33,
-}
+const student = new Student('Ibrahim', 20, true);
+console.log(student.name);
