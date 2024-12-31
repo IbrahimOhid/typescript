@@ -31,10 +31,17 @@
 
 // array type  💚💚💚💛
 
-let userName: string[];
-userName = ['ibrahim', 'ohid'];
-console.log(userName);
+// let userName: string[];
+// userName = ['ibrahim', 'ohid'];
+// console.log(userName);
 
-let firstName: Array<string>;
-firstName = ['Mohammad Ibrahim'];
-console.log(firstName);
+// let firstName: Array<string>;
+// firstName = ['Mohammad Ibrahim'];
+// console.log(firstName);
+
+// let multipleType: (string | number | boolean)[];
+// multipleType = ['mohammad', 27, true];
+
+let allUser: string[];
+allUser = ['mohammad', 'rahim', 'abir', 'karim', 'babu'];
+console.log(allUser.sort());
