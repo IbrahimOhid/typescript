@@ -39,8 +39,41 @@
 // let user: [number, string];
 // user = [101, 'ibrahim']
 // console.log(user);
-let allUser;
-allUser = ['ohid', 27, true];
-console.log(allUser);
-allUser.push(22, false, 'ohid');
-console.log(allUser);
+// let allUser: [string, number, boolean]
+// allUser = ['ohid', 27, true]
+// console.log(allUser);
+// allUser.push( 22, false, 'ohid');
+// console.log(allUser);
+// enums type: numeric, string, heterogenous 💚💛💚💚
+// numeric enum 💛💛💛
+// enum requestType {
+//     receiveData,
+//     saveData,
+//     deleteData
+// }
+// console.log(requestType);
+// console.log(requestType.saveData);
+// enum userInfo{
+//     firstId = 1,
+//     secondId = 3,
+//     thirdId
+// }
+// console.log(userInfo);
+// console.log(userInfo.thirdId);
+// console.log(userInfo.firstId);
+// string enum 💛💛💛
+// enum userName {
+//     firstName = 'Mohammad',
+//     lastName = 'Ibrahim'
+// }
+// console.log(userName);
+// console.log(userName.lastName);
+// heterogenous enum 💛💛💛
+var userInfo;
+(function (userInfo) {
+    userInfo["name"] = "Ohid";
+    userInfo[userInfo["age"] = 27] = "age";
+    userInfo["isSkilled"] = "true";
+})(userInfo || (userInfo = {}));
+console.log(userInfo);
+console.log(userInfo.isSkilled);
