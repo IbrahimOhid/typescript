@@ -42,6 +42,18 @@
 // let multipleType: (string | number | boolean)[];
 // multipleType = ['mohammad', 27, true];
 
-let allUser: string[];
-allUser = ['mohammad', 'rahim', 'abir', 'karim', 'babu'];
-console.log(allUser.sort());
+// let allUser: string[];
+// allUser = ['mohammad', 'rahim', 'abir', 'karim', 'babu'];
+// console.log(allUser.sort());
+
+// tuple type 💚💛💚💚
+
+// let user: [number, string];
+// user = [101, 'ibrahim']
+// console.log(user);
+
+let allUser: [string, number, boolean]
+allUser = ['ohid', 27, true]
+console.log(allUser);
+allUser.push( 22, false, 'ohid');
+console.log(allUser);
