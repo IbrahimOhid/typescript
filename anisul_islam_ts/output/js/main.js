@@ -69,11 +69,27 @@
 // console.log(userName);
 // console.log(userName.lastName);
 // heterogenous enum 💛💛💛
-var userInfo;
-(function (userInfo) {
-    userInfo["name"] = "Ohid";
-    userInfo[userInfo["age"] = 27] = "age";
-    userInfo["isSkilled"] = "true";
-})(userInfo || (userInfo = {}));
-console.log(userInfo);
-console.log(userInfo.isSkilled);
+// enum userInfo{
+//     name = 'Ohid',
+//     age = 27,
+//     isSkilled = 'true'
+// }
+// console.log(userInfo);
+// console.log(userInfo.isSkilled);
+// object data type 💚💛💚💚
+// let user1: {userName: string, id: number};
+// user1 = {userName : 'ibrahim', id : 101};
+// console.log(user1);
+// let user2: {userName: string, id?: number};
+// user2 = {userName: 'rahim'};
+// console.log(user2);
+let users;
+users = [];
+let user1;
+user1 = { userName: 'Mohammad', id: 103 };
+users.push(user1);
+console.log(users);
+let user2;
+user2 = { userName: 'Ibrahim', id: 101 };
+users.push(user2);
+console.log(users);
