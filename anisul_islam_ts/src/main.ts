@@ -110,15 +110,53 @@
 // user2 = {userName: 'rahim'};
 // console.log(user2);
 
-let users: object[];
-users = [];
+// let users: object[];
+// users = [];
 
-let user1: {userName: string, id: number};
-user1 = {userName: 'Mohammad', id: 103};
-users.push(user1);
-console.log(users);
+// let user1: {userName: string, id: number};
+// user1 = {userName: 'Mohammad', id: 103};
+// users.push(user1);
+// console.log(users);
 
-let user2: {userName: string, id: number};
-user2 = {userName: 'Ibrahim', id: 101};
-users.push(user2);
-console.log(users);
+// let user2: {userName: string, id: number};
+// user2 = {userName: 'Ibrahim', id: 101};
+// users.push(user2);
+// console.log(users);
+
+// create custom data type 💚💛💚💚
+
+// type userInfo = {userName: string, age: number};
+
+// let users: userInfo[];
+// users = [];
+
+// let user1: userInfo;
+// user1 = {userName:'Ibrahim', age: 27}
+// users.push(user1);
+
+// let user2: userInfo;
+// user2 = {userName: 'Ohid', age: 25};
+// users.push(user2)
+
+// let user3: userInfo;
+// user3 = {userName: 'Rafiya', age: 22};
+// users.push(user3);
+
+// console.log(users);
+
+// type requestType = 'GET' | 'POST';
+
+// let getRequest: requestType;
+// getRequest = 'GET';
+// console.log(getRequest);
+
+
+type RequestType = 'POST' | 'GET';
+
+function handelRequest(requestType: RequestType){
+    if(requestType === 'GET'){
+        alert('YES')
+    }
+}
+handelRequest('GET')
+
