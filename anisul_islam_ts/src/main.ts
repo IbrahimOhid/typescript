@@ -151,12 +151,60 @@
 // console.log(getRequest);
 
 
-type RequestType = 'POST' | 'GET';
+// type RequestType = 'POST' | 'GET';
 
-function handelRequest(requestType: RequestType){
-    if(requestType === 'GET'){
-        alert('YES')
+// function handelRequest(requestType: RequestType){
+//     if(requestType === 'GET'){
+//         alert('YES')
+//     }
+// }
+// handelRequest('GET')
+
+
+// class & Object 💚💛💚💚  : properties, methods, constructor & class object
+
+// class userInfo{
+//     // properties
+//     userName: string;
+//     age: number;
+
+//     // constructor
+//     constructor(u: string, a: number){
+//         this.userName = u;
+//         this.age = a;
+//     }
+
+//     // methods
+//     displayUser(): void{
+//         console.log(`UserName: ${this.userName}, Age: ${this.age}`);
+//     }
+// }
+
+// let user1 = new userInfo('Ibrahim', 27);
+// user1.displayUser();
+
+// let user2 = new userInfo('Ohid', 22);
+// user2.displayUser();
+
+
+class newUser{
+    name: string;
+    roll: number
+
+    constructor(n: string, r: number){
+        this.name = n;
+        this.roll = r;
+    }
+
+    showUser():void{
+        console.log(`Name: ${this.name}. Roll: ${this.roll}`);
     }
 }
-handelRequest('GET')
+
+let userOne = new newUser('Rafiay', 1);
+userOne.showUser();
+
+let userTwo = new newUser('Kawser', 2);
+userTwo.showUser()
+
 
