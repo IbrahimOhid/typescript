@@ -187,24 +187,57 @@
 // user2.displayUser();
 
 
-class newUser{
-    name: string;
-    roll: number
+// class newUser{
+//     name: string;
+//     roll: number
 
-    constructor(n: string, r: number){
-        this.name = n;
-        this.roll = r;
+//     constructor(n: string, r: number){
+//         this.name = n;
+//         this.roll = r;
+//     }
+
+//     showUser():void{
+//         console.log(`Name: ${this.name}. Roll: ${this.roll}`);
+//     }
+// }
+
+// let userOne = new newUser('Rafiay', 1);
+// userOne.showUser();
+
+// let userTwo = new newUser('Kawser', 2);
+// userTwo.showUser()
+
+// inheritance 💚💛💚💚
+
+class user{
+    userName: string;
+    age: number;
+
+    constructor(u: string, a: number){
+        this.userName = u;
+        this.age = a;
     }
 
-    showUser():void{
-        console.log(`Name: ${this.name}. Roll: ${this.roll}`);
+    displayUser(): void{
+        console.log(`UserName: ${this.userName}. Age: ${this.age}`);
     }
 }
 
-let userOne = new newUser('Rafiay', 1);
-userOne.showUser();
+class NewStudent extends user{
+    studentId: number;
 
-let userTwo = new newUser('Kawser', 2);
-userTwo.showUser()
+    constructor(u: string, a: number, s: number){
+        super(u, a);
+        this.studentId = s;
+    }
+    
+    displayStudent():void{
+        console.log(`userName: ${this.userName}, age: ${this.age} & StudentId: ${this.studentId}`);
+    }
+}
+
+let newStudent = new NewStudent('Mohammad', 28, 101);
+newStudent.displayStudent();
+
 
 
