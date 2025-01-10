@@ -1,16 +1,21 @@
-const UserForm = document.querySelector('form') as HTMLFormElement;
-const UserName = document.querySelector('#user_name') as HTMLInputElement;
-const UserEmail = document.querySelector('#user_email') as HTMLInputElement;
-const UserCountry = document.querySelector('#country') as HTMLSelectElement;
-const UserFeedback = document.querySelector('#user_feedback') as HTMLTextAreaElement;
+const form = document.querySelector('form') as HTMLFormElement;
+const userName = document.querySelector('#user_name') as HTMLInputElement;
+const userEmail = document.querySelector('#user_email') as HTMLInputElement;
+const countyName = document.querySelector('#country') as HTMLSelectElement;
+const feedback = document.querySelector('#user_feedback') as HTMLTextAreaElement;
 
-UserForm.addEventListener('submit', (e)=>{
+
+form.addEventListener('submit', (e)=>{
     e.preventDefault();
-    const data = {
-        userName: UserName.value,
-        userEmail: UserEmail.value,
-        UserCountry: UserCountry.value,
-        UserFeedback: UserFeedback.value
+    const userData = {
+        userName: userName.value,
+        userEmail: userEmail.value,
+        countyName: countyName.value,
+        feedback: feedback.value
     }
-    console.log(data);
+    userName.value = '';
+    userEmail.value = '';
+    countyName.value = '';
+    feedback.value = '';
+    console.log(userData);
 })
