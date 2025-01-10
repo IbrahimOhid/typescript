@@ -209,35 +209,53 @@
 
 // inheritance 💚💛💚💚
 
-class user{
-    userName: string;
-    age: number;
+// class user{
+//     userName: string;
+//     age: number;
 
-    constructor(u: string, a: number){
-        this.userName = u;
-        this.age = a;
-    }
+//     constructor(u: string, a: number){
+//         this.userName = u;
+//         this.age = a;
+//     }
 
-    displayUser(): void{
-        console.log(`UserName: ${this.userName}. Age: ${this.age}`);
-    }
-}
+//     displayUser(): void{
+//         console.log(`UserName: ${this.userName}. Age: ${this.age}`);
+//     }
+// }
 
-class NewStudent extends user{
-    studentId: number;
+// class NewStudent extends user{
+//     studentId: number;
 
-    constructor(u: string, a: number, s: number){
-        super(u, a);
-        this.studentId = s;
-    }
+//     constructor(u: string, a: number, s: number){
+//         super(u, a);
+//         this.studentId = s;
+//     }
     
-    displayStudent():void{
-        console.log(`userName: ${this.userName}, age: ${this.age} & StudentId: ${this.studentId}`);
-    }
+//     displayStudent():void{
+//         console.log(`userName: ${this.userName}, age: ${this.age} & StudentId: ${this.studentId}`);
+//     }
+// }
+
+// let newStudent = new NewStudent('Mohammad', 28, 101);
+// newStudent.displayStudent();
+
+
+// function signature 💚💚💚💚💚
+
+let user1: () => void;
+user1 = () =>{
+    console.log('I love TS');
 }
+user1();
 
-let newStudent = new NewStudent('Mohammad', 28, 101);
-newStudent.displayStudent();
+let user2: (name: string)=> void;
+user2 = (n: string)=>{
+    console.log(`I am ${n}.`);
+}
+user2('Ibrahim');
 
-
-
+let user3: (userName: string, age: number)=> string;
+user3 = (uN: string, a: number)=>{
+    return(`${uN} is ${a} Years Old.`)
+}
+console.log(user3('Ohid', 27));
