@@ -241,21 +241,47 @@
 
 
 // function signature 💚💚💚💚💚
+//💛💛💛
+// let user1: () => void;
+// user1 = () =>{
+//     console.log('I love TS');
+// }
+// user1();
+//💛💛💛
+// let user2: (name: string)=> void;
+// user2 = (n: string)=>{
+//     console.log(`I am ${n}.`);
+// }
+// user2('Ibrahim');
+//💛💛💛
+// let user3: (userName: string, age: number)=> string;
+// user3 = (uN: string, a: number)=>{
+//     return(`${uN} is ${a} Years Old.`)
+// }
+// console.log(user3('Ohid', 27));
 
-let user1: () => void;
-user1 = () =>{
-    console.log('I love TS');
-}
-user1();
+//interface as types 💚💚💚
 
-let user2: (name: string)=> void;
-user2 = (n: string)=>{
-    console.log(`I am ${n}.`);
+interface InputInfo{
+    id: number,
+    name: string,
+    age: number
 }
-user2('Ibrahim');
 
-let user3: (userName: string, age: number)=> string;
-user3 = (uN: string, a: number)=>{
-    return(`${uN} is ${a} Years Old.`)
+let usersInfo: InputInfo[] = [];
+
+let user1: InputInfo = {
+    id: 23,
+    name: 'Ohid',
+    age: 27
 }
-console.log(user3('Ohid', 27));
+usersInfo.push(user1);
+
+
+let user2: InputInfo = {
+    id: 25,
+    name: 'rafiya',
+    age: 22
+}
+usersInfo.push(user2);
+console.log(usersInfo);
