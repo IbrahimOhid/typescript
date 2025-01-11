@@ -262,26 +262,68 @@
 
 //interface as types 💚💚💚
 
-interface InputInfo{
-    id: number,
-    name: string,
-    age: number
+// interface InputInfo{
+//     id: number,
+//     name: string,
+//     age: number
+// }
+
+// let usersInfo: InputInfo[] = [];
+
+// let user1: InputInfo = {
+//     id: 23,
+//     name: 'Ohid',
+//     age: 27
+// }
+// usersInfo.push(user1);
+
+
+// let user2: InputInfo = {
+//     id: 25,
+//     name: 'rafiya',
+//     age: 22
+// }
+// usersInfo.push(user2);
+// console.log(usersInfo);
+
+// class implementing interface 💚💚💚
+
+// interface allUser {
+//     allInfo: ()=> string
+// }
+
+// class user implements allUser{
+//     constructor(private name: string, private age: number){}
+//     allInfo = ()=>{
+//         return `I am ${this.name}. I am ${this.age} Years Old`
+//     }
+// }
+
+// let user1 = new user('Mohammad', 27);
+// console.log(user1.allInfo());
+
+
+// interface allInfo {
+//     userInfo : ()=> string;
+// }
+
+// class user implements allInfo{
+//     constructor(private name: string, private age: number){}
+
+//     userInfo = ()=>{
+//         return `Name: ${this.name}, Age: ${this.age}`
+//     }
+// }
+
+// let user1 = new user('Potato', 22);
+// console.log(user1.userInfo());
+
+// Generics 💚💚💚💚
+
+const printFunction = <X, Y, Z> (name: X, age: Y, user: Z)=>{
+    return `${name}, ${age}, ${user}`
 }
 
-let usersInfo: InputInfo[] = [];
-
-let user1: InputInfo = {
-    id: 23,
-    name: 'Ohid',
-    age: 27
-}
-usersInfo.push(user1);
-
-
-let user2: InputInfo = {
-    id: 25,
-    name: 'rafiya',
-    age: 22
-}
-usersInfo.push(user2);
-console.log(usersInfo);
+printFunction('Ibrahim', 22, true)
+printFunction(23, 'ohid', true)
+printFunction(true, 22, 'ibrahim')
